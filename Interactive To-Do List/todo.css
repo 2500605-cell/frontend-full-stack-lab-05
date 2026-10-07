@@ -1,0 +1,76 @@
+/* Name: Adeena Akram | Registration No: 2500605 */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 30px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#todoForm {
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.error {
+    color: crimson;
+    min-height: 20px;
+}
+
+#counter {
+    font-weight: bold;
+}
+
+.filters {
+    margin: 15px 0;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 8px 0;
+    background: #eee;
+}
+
+.task-text {
+    flex: 1;
+}
+
+.done .task-text {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.delete {
+    background: crimson;
+    color: white;
+    border: none;
+}

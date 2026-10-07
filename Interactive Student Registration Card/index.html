@@ -1,0 +1,84 @@
+<!-- Name: Adeena Akram | Registration No: 2500605 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Registration</h1>
+
+        <div class="registration-area">
+
+            <form id="registrationForm">
+
+                <label>Full Name</label>
+                <input type="text" id="fullName">
+                <p id="nameError" class="error"></p>
+
+                <label>Email</label>
+                <input type="text" id="email">
+                <p id="emailError" class="error"></p>
+
+                <label>Program</label>
+                <select id="program">
+                    <option value="">Select Program</option>
+                    <option value="ADCS">ADCS</option>
+                    <option value="BSCS">BSCS</option>
+                    <option value="BSSE">BSSE</option>
+                </select>
+                <p id="programError" class="error"></p>
+
+                <label>Semester</label>
+                <input type="number" id="semester">
+                <p id="semesterError" class="error"></p>
+
+                <button type="submit">Register Student</button>
+
+            </form>
+
+            <div id="previewCard" class="card">
+
+                <h2>Student Preview</h2>
+
+                <p>
+                    <b>Name:</b>
+                    <span id="previewName">Your Name</span>
+                </p>
+
+                <p>
+                    <b>Email:</b>
+                    <span id="previewEmail">Your Email</span>
+                </p>
+
+                <p>
+                    <b>Program:</b>
+                    <span id="previewProgram">Your Program</span>
+                </p>
+
+                <p>
+                    <b>Semester:</b>
+                    <span id="previewSemester">Your Semester</span>
+                </p>
+
+                <button type="button" id="modeButton">
+                    Toggle Dark Mode
+                </button>
+
+            </div>
+
+        </div>
+
+        <h2>Registered Students</h2>
+
+        <ul id="studentList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
